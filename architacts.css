@@ -8,3 +8,69 @@
   font-variation-settings:
     "wdth" 100;
 }
+/* shered styles */
+.display-flex{
+    display: flex;
+}
+.bg-light{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+.dark-3{
+    color: #727272;
+}
+.dark-2{
+    color: #424242;
+}
+.btn-primary{
+    background-color: #FF900E;
+    color: white;
+    padding: 20px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600px;
+}
+.btn-primary:hover{
+    cursor: pointer;
+}
+/* navber styles */
+.navber{
+    justify-content: space-between;
+    align-items: center;
+}
+.brand{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.nav-item{
+    list-style: none;
+    margin-right: 30px;
+}
+.nav-link{
+    text-decoration: none;
+}
+.navber, .banner{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* banner section styles */
+.banner-contant{
+    max-width: 860px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.banner-title{
+    font-size: 4rem;
+    font-weight: bold;
+}
+.banner-img{
+    width: 100%;
+}
+
+/* responsive media query */
+@media screen and (max-width:576px) {
+    .navber, .nav-links{
+        flex-direction: column;
+    }
+}
