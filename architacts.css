@@ -97,6 +97,41 @@ main{
 .f-part-2{
     color: #FF900E;
 }
+/* enjoy section styles */
+.enjoy{
+    display: flex;
+    gap: 150px;
+}
+#border{
+    border-left: 7px solid #FF900E;
+    padding-left: 20px;
+}
+.enjoy-title{
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 5px;
+
+}
+.enjoy-subtitle{
+    font-weight:400px;
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.enjoy-card{
+    /* max-width: 240px; */
+    padding: 20px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+}
+#special-btn{
+    padding: 45px;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+.xxx{
+    font-size: 4.5rem;
+    font-weight: bold;
+}
 /*same facts section styles */
 .facts-title{
     font-size: 3rem;
@@ -125,9 +160,28 @@ main{
     margin-top: 5px;
     margin-bottom: 5px;
 }
-
-
-
+/* sponspors section styles */
+.sponspors-title{
+    font-weight: bold;
+    font-size: 3rem;
+    text-align: center;
+}
+.sponspors-description{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.sponspors-img-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+    align-items: center;
+}
+/* footer section styles */
+footer{
+    padding: 30px 400px;
+    background-color: rgba(255, 244, 231, 1);
+    margin-top: 130px;
+}
 
 
 
@@ -141,11 +195,17 @@ main{
 
 /* responsive media query */
 @media screen and (max-width:576px) {
-    .navber, .features{
+    .navber, .features, .enjoy{
         flex-direction: column;
     }
-    .features-img-contant, .facts-card-container{
+    .features-img-contant,
+     .facts-card-container,
+     .sponspors-img-container{
         grid-template-columns: repeat(1, 1fr);
+    }
+    .sponspors-img-container{
+        gap: 50px;
+        justify-items: center;
     }
     .features-contant{
         margin-left: 10px;
@@ -157,7 +217,26 @@ main{
         justify-items: center;
         gap: 24px;
     }
+    .Experience-btn img{
+        width: 100%;
+    }
+    #special-btn{
+        margin: 0px;
+        /* padding: 20px; */
+    }
+    footer{
+        display: flex;
+        width: 320px;
+        padding: 10px;
+        margin: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
 }
+
+
+
 /* medium device media query */
 @media screen and (min-width:576px) and (max-width:992px) {
     .features{
